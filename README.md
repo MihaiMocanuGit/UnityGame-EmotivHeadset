@@ -1,3 +1,6 @@
+!!TODO
+Edit readme to add info about game and to say that it was built upon the official emotiv unity demo
+
 # Emotiv Unity Example
 
 This example demonstrates how to work with Emotiv Cortex Service (aka Cortex) in Unity.
