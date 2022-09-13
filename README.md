@@ -1,5 +1,36 @@
-!!TODO
-Edit readme to add info about game and to say that it was built upon the official emotiv unity demo
+
+# **Out of development since 2020**
+This project is not maintained
+
+# Summary
+
+This project consists of a ping-pong game which was combined with the Unity Example made by Emotiv. The role of this app was to test the hypothesis that games can be used in managing social anxiety
+
+This game won gold medal at ROSEF 2020 and I-FEST^2 2020.
+
+It relies on the Emotiv Epoch Headset to work properly. The reason why it's not just a standalone game is because our team used this headset to monitor the stress, excitement, engagment, focus, interest and relaxion levels of the player
+
+# Gameplay (short description)
+
+This game presents you with a fake environment:
+
+* Firstly you join what appears to be a multiplayer match of ping-pong with 3 other real players.
+* The catch is that you are actually playing a singleplayer game with 3 bots and this ping-pong match is not a fair one. 
+* The game analyzes your stress level with the emotiv epoch headset and using this data it changes the behaviour of the enemy team and game logic:
+	* The enemy team subtly includes or excludes you from the game -by passing more or less often to your teammate- in such a way that your stress levels are maintained in a predefined range
+	* When a point is set, the ball will reset near you more or less frequently.
+	* Bonus points might be added to your team or enemy team from time to time.
+
+# Why I merged my game with the Unity Example from Emotiv
+
+While developing my game, emotiv launched an unity plugin which can be used to connect to the emotiv API, unfortunately at that time there wasn't any documentation made for this plugin.
+
+As such I had 3 choices:
+1. Don't change anything and use the old script that had to be launched before starting the game. This script was made to connect to the headset and output it's data.
+1. Reverse engineer the unity example so as to understand how the whole plugin works. Unfortunately this way would take too much time and I didn't have enough.
+1. Understand the unity example well to enough to be able to "hack" it and obtain the already processed data from it. 
+
+Understandably, I resorted to the 3rd option. As I result, I combined my unity game with the unity example.
 
 # Emotiv Unity Example
 
@@ -59,4 +90,4 @@ After authorizing successfully, the example will list available headsets.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Emotiv/cortex-v2-example/blob/master/LICENSE) file for details
+The Emotiv Example is licensed under the MIT License - see the [LICENSE.md](https://github.com/Emotiv/cortex-v2-example/blob/master/LICENSE) file for details
